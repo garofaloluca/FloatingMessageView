@@ -3,11 +3,15 @@
 
 FloatingMessageView is a library that makes you to show messages on the screen over the current layout (with the highest value on the Z-Axis) attaching it to a target view. 
 
+## Screenshot
+![Screenshot](https://i.ibb.co/0MjQQ4h/screen.jpg)<br>
+More detailed image: https://i.ibb.co/nzSmV3c/screen.jpg
+
 ## Download
 
 ### Gradle
 
-Put below code into your ```build.gradle``` project file:
+Put below code into your root ```build.gradle``` project file:
 ```gradle
 allprojects 
 {
@@ -20,8 +24,21 @@ allprojects
 
 Add this dependency into your module's ```build.gradle``` file:
 ```gradle
-dependencies {
+dependencies 
+{
   implementation 'com.github.garofaloluca:FloatingMessageView:1.0'
+}
+```
+If you have problems using this library, it may be caused by the compatibility of the versions.<br>
+Try to add these lines into your module's ```build.gradle``` file if it happens:
+```gradle
+android 
+{
+    compileOptions 
+    {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 ```
 
