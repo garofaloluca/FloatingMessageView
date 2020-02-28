@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:cardBackgroundColor="#0077aa"
+        android:translationZ="999dp"
         app:cardCornerRadius="10dp">
 
         <LinearLayout
@@ -42,7 +43,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_arrow_down"
-        android:tint="#0077aa"
         android:translationZ="999dp"
         tools:ignore="VectorDrawableCompat" />
 
